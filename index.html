@@ -28,6 +28,8 @@
 	
 		
 		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok; 
+		document.getElementById("aktualnaGodzina").innerHTML = "Aktualna godzina: "+milisekundy; 
+		
 		document.getElementById("dataWydarzenia").innerHTML = "Data wydarzenia do którego obliczamy liczbę dni: "+endDzien+"/"+endMiesiac+"/"+endRok;
 		document.getElementById("dniDoWydarzenia").innerHTML ="Do wydarzenia pozostało: "+ dni;
 		 
@@ -42,7 +44,7 @@
 
 <div id="container">
 <div id="topBar">
-"Ile dni pozostało do rozpoczęcia wakacji.”</div>
+"Ile dni pozostało do rozpoczęcia wakacji?”</div>
 	
 	<div id="aktualnaData">...</div> 
 
@@ -58,7 +60,7 @@
 	odliczanie();
 </script>
 <div id="footer">
-Już niedługo wakacje!;
+Już niedługo wakacje!
 </div>
 	<div id="footer">
 Dołącz do klas informatycznych SLO i &lt;koduj&gt;
