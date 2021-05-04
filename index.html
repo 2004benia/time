@@ -15,23 +15,35 @@
 		var miesiac = dzisiaj.getMonth()+1;
 		var rok = dzisiaj.getFullYear();
 		var milisekundy = dzisiaj.getTime();
+		var sekundy = dzisiaj.getSeconds();
+		var minuty = dzisiaj.getMinutes();
+		var godziny = dzisiaj.getHours();
 		
 		var end = new Date("06/25/2021");//data wydarzenia
 		var endDzien = end.getDate();
 		var endMiesiac = end.getMonth()+1;
 		var endRok = end.getFullYear();
 		var milisekundy2 = end.getTime();
+		var sekundy2 = end.getSeconds();
+		var minuty2 = end.getMinutes();
+		var godziny2 = end.getHours();
 		
 		var pozostalo = milisekundy2 - milisekundy; //obliczamy ile milisekund pozostało do wydarzenia
 		var dni = Math.floor(pozostalo/86400000); //obliczamy liczbe dni do wydarzenia
-		
-	
+		var sekunda = sekundy2 - sekundy; //obliczamy ile sekund pozostało do wydarzenia
+		var minuta = minuty2 - minuty; //obliczamy ile minut pozostało do wydarzenia
+		var godzina = godziny2 - godziny; //obliczamy ile godzin pozostało do wydarzenia
 		
 		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok; 
-		document.getElementById("aktualnaGodzina").innerHTML = "Aktualna godzina: "+milisekundy; 
-		
 		document.getElementById("dataWydarzenia").innerHTML = "Data wydarzenia do którego obliczamy liczbę dni: "+endDzien+"/"+endMiesiac+"/"+endRok;
 		document.getElementById("dniDoWydarzenia").innerHTML ="Do wydarzenia pozostało: "+ dni;
+		
+		document.getElementById("godzinyDoWydarzenia").innerHTML ="Do wydarzenia pozostało godzin: "+ godzina;
+		document.getElementById("minutyDoWydarzenia").innerHTML = "Do wydarzenia pozostało minut: "+ minuta;
+		document.getElementById("sekundyDoWydarzenia").innerHTML ="Do wydarzenia pozostało sekund: "+ sekunda;
+		document.getElementById("milisekundyDoWydarzenia").innerHTML ="Do wydarzenia pozostało milisekund: "+ pozostalo;
+		 
+		
 		 
 	}
 	
@@ -52,13 +64,26 @@
 	<div id="aktualnaData">...</div> 
 	<br/>
 	
-	<div id="aktualnaGodzina">...</div> 
-	<br/>
-	
 	<div id="dataWydarzenia">...</div>
         <br/>
 	
 	<div id="dniDoWydarzenia">...</div> 
+	<br/>
+	
+	<div id= "godzinyDoWydarzenia">...</div>
+	</br>
+	
+	<div id= "minutyDoWydarzenia">...</div>
+	</br>
+	
+	<div id= "sekundyDoWydarzenia">...</div>
+	</br>
+
+<div id= "milisekundyDoWydarzenia">...</div>
+	</br>
+
+	
+	
 	
 	
 	
