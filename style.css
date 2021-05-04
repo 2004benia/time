@@ -1,6 +1,6 @@
 body
 {
-background-color: 	#808080;
+background-color: 	#FFE4E1;
 font-family: Verdana;
 font-size: 24px;
 color: white;
@@ -11,7 +11,7 @@ color: white;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom:50px;
-	background-color: #C0C0C0;
+	background-color:#FFD700;
 	margin: auto;
     width: 1000px;
 }
@@ -67,7 +67,7 @@ color: white;
 
 #footer
 {
-	color: #808080;
+	color: #90EE90;
 	margin-top: 50px;
 	padding: 10px;
 	font-size: 12px;
@@ -78,7 +78,7 @@ color: white;
 #topBar
 {
 	
-	color: #808080;
+	color: #F08080;
 	padding: 10px;
 	font-size: 18px;
 	text-align: center;
