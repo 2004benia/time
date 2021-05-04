@@ -72,7 +72,7 @@ color: white;
 	padding: 10px;
 	font-size: 12px;
 	text-align: center;
-    border: 3px solid blue;
+    border: 3px solid #00CED1;//niebieski
 	letter-spacing: 3px;
 }
 #topBar
