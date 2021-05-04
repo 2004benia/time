@@ -30,9 +30,9 @@
 		
 		var pozostalo = milisekundy2 - milisekundy; //obliczamy ile milisekund pozostało do wydarzenia
 		var dni = Math.floor(pozostalo/86400000); //obliczamy liczbe dni do wydarzenia
-		var sekunda = sekundy2 - sekundy; //obliczamy ile sekund pozostało do wydarzenia
-		var minuta = minuty2 - minuty; //obliczamy ile minut pozostało do wydarzenia
-		var godzina = godziny2 - godziny; //obliczamy ile godzin pozostało do wydarzenia
+		var sekunda = Math.floor(pozostalo/1000); //obliczamy ile sekund pozostało do wydarzenia
+		var minuta = Math.floor(pozostalo/60000); //obliczamy ile minut pozostało do wydarzenia
+		var godzina =Math.floor(pozostalo/3600000); //obliczamy ile godzin pozostało do wydarzenia
 		
 		document.getElementById("aktualnaData").innerHTML = "Aktualna data: "+dzien+"/"+miesiac+"/"+rok; 
 		document.getElementById("dataWydarzenia").innerHTML = "Data wydarzenia do którego obliczamy liczbę dni: "+endDzien+"/"+endMiesiac+"/"+endRok;
