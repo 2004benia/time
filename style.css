@@ -37,6 +37,28 @@ color: white;
     border: 3px solid #808080;
 }
 
+#godzinyDoWydarzenia
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+
+#minutyDoWydarzenia
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#sekundyDoWydarzenia
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#milisekundyDoWydarzenia
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+
 #description
 {
 	text-align: center;
